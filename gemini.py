@@ -5,7 +5,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ðŸ”¹ Gemini API Key
-genai.configure(api_key=os.getenv("👉🏻👉🏻👉🏻👉🏻AAPKI APIKEY👈🏻👈🏻👈🏻👈🏻"))
+genai.configure(api_key=os.getenv("from google import genai
+
+client = genai.Client(api_key="YOUR_API_KEY")
+
+response = client.models.generate_content(
+    model="gemini-2.0-flash",
+    contents="Explain how AI works",
+)
+
+print(response.text)"))
 
 # ðŸ”¹ Permanent System Prompt
 system_prompt = """
