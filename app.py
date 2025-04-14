@@ -4,7 +4,16 @@ import requests
 app = Flask(__name__, template_folder="templates")  # Ensure 'templates' folder is used
 
 # ðŸ”¹ Gemini API Key (Yahan Direct Enter Kiya Gaya Hai)
-GEMINI_API_KEY = "👉🏻apki apikey👈🏻"
+GEMINI_API_KEY = "from google import genai
+
+client = genai.Client(api_key="YOUR_API_KEY")
+
+response = client.models.generate_content(
+    model="gemini-2.0-flash",
+    contents="Explain how AI works",
+)
+
+print(response.text)"
 
 # ðŸ”¹ Gemini API Call Function
 def get_gemini_response(user_input):
